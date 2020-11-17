@@ -19,13 +19,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4785bdd1c96b2a846b2bd7cc02e86b6b3dbf14e7e53446c4f54c92a361040822"
 
 [[package]]
-name = "gpio_example"
-version = "0.1.0"
-dependencies = [
- "sysfs_gpio",
-]
-
-[[package]]
 name = "libc"
 version = "0.2.80"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -42,6 +35,13 @@ dependencies = [
  "cfg-if",
  "libc",
  "void",
+]
+
+[[package]]
+name = "rust_gpio"
+version = "0.1.0"
+dependencies = [
+ "sysfs_gpio",
 ]
 
 [[package]]
