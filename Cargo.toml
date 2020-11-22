@@ -8,3 +8,4 @@ edition = "2018"
 
 [dependencies]
 sysfs_gpio = "0.5"
+rand = "0.7.3" # Or a newer version
