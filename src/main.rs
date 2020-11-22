@@ -74,6 +74,9 @@ fn rgb_touch() {
             
         }
         Ok(())
-    })
-    .unwrap();         
+    }).unwrap_or(());
+    
+    r_led.unexport().unwrap_or(());
+    b_led.unexport().unwrap_or(());
+    g_led.unexport().unwrap_or(());
 }
